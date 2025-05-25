@@ -1,0 +1,40 @@
+#!/usr/bin/env ruby
+puts ARGV[0].scan(/127.0.0.[0-9]/).join
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Airline Tweets</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tweets.html">Tweets</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h1>Latest Airline Updates</h1>
+            <!-- Embedded Tweet (Replace with an actual tweet embed code) -->
+            <blockquote class="twitter-tweet">
+                <p lang="en" dir="ltr">Exciting news! We now offer seamless flight rescheduling options for all travelers. Book your flights today! ✈️</p>
+                &mdash; Airline Company (@AirlineHandle)
+                <a href="https://twitter.com/AirlineHandle/status/TweetID">Date</a>
+            </blockquote>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </article>
+
+        <aside>
+            <p>Placeholder to add comment thread later.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Made by Arlon - <a href="https://yourlinkhere.com" target="_blank">here</a>.</p>
+    </footer>
+</body>
+</html>
