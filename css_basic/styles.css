@@ -1,3 +1,32 @@
 #!/usr/bin/env ruby
 puts ARGV[0].scan(/127.0.0.[0-9]/).join
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 10vh;
+}
+
+main {
+	display: flex;
+	flex-direction: row;
+	flex: auto;
+	flex-grow: 1;
+}
+
+article {
+	flex: 2;
+	overflow-y: auto;
+}
+
+aside {
+	flex: 1;
+	overflow-y: auto;
+}
+
+header, footer {
+	background: #139;
+	color: skyblue;
+	text-align: center;
+	padding: 1rem;
+}
 
