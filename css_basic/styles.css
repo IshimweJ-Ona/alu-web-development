@@ -1,32 +1,74 @@
 #!/usr/bin/env ruby
 puts ARGV[0].scan(/127.0.0.[0-9]/).join
 body {
-	display: flex;
-	flex-direction: column;
-	min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures full viewport height */
+    opacity: 0.9;
+    border-style: solid;
+    border-width: 2.5px;
+    border-color: black;
+    border-radius: 12px;
+    padding: 4px;
+    background-color: black; /* Full black background */
+    color: white; /* Ensures readable text */
 }
 
 main {
-	display: flex;
-	flex-direction: row;
-	flex: auto;
-	flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    flex-grow: 1;
+    border-radius: 12px;
+    border-style: solid;
 }
 
 article {
-	flex: 2;
-	overflow-y: auto;
+    flex: 2;
+    overflow-y: auto;
 }
 
 aside {
-	flex: 1;
-	overflow-y: auto;
+    flex: 1;
+    overflow-y: auto;
 }
 
 header, footer {
-	background: #139;
-	color: skyblue;
-	text-align: center;
-	padding: 1rem;
+    border-style: solid; /* Fixed border styling */
+    border-width: 2px;
+    background: rgba(100, 45, 105, 0.2);
+    color: skyblue;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    border-radius: 12px;
+    align-items: center;
 }
 
+.Block {
+    display: flex;
+    justify-content: space-between; /* Ensures separation of links */
+    align-items: center;
+    padding: 3px;
+    width: 100%;
+}
+
+.Block li {
+    margin: 0 80px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: auto;
+}
+
+p {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.block1, .block2 {
+    border: 2px solid skyblue;
+}
